@@ -1,0 +1,13 @@
+CREATE DATABASE `veiculosdatabase` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+CREATE TABLE `veiculosdatabase`.`veiculos` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `placa` VARCHAR(45) NOT NULL,
+  `chassi` VARCHAR(45) NOT NULL,
+  `renavam` VARCHAR(45) NOT NULL,
+  `modelo` VARCHAR(45) NOT NULL,
+  `marca` VARCHAR(45) NOT NULL,
+  `ano` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `chassi_UNIQUE` (`chassi` ASC) VISIBLE,
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE);
